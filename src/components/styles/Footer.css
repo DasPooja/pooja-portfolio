@@ -1,0 +1,39 @@
+/* Footer styling */
+.footer {
+  background-color: var(--footer-bg-color);
+  color: var(--text-color);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-links {
+  margin: 10px 0;
+}
+
+.footer-links a {
+  color: var(--text-color);
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--secondary-color); /* Accent color on hover */
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--secondary-color); /* Accent color on hover */
+}

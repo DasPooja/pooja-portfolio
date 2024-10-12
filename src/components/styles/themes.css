@@ -4,6 +4,7 @@
   --text-color: #000000;
   --navbar-bg-color: #ffffff;
   --navbar-text-color: #000000;
+  --footer-bg-color: #8e8585;
 }
 
 .dark {
@@ -12,4 +13,5 @@
   --text-color: #ffffff;
   --navbar-bg-color: #000000;
   --navbar-text-color: #ffffff;
+  --footer-bg-color: #313030;
 }

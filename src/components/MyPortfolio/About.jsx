@@ -20,7 +20,7 @@ const About = () => {
     <>
       <section id="about" className="about-container">
         <div className="about-intro">
-          <h2>About Me</h2>
+          <h2 className="section-title">About Me</h2>
           <p>
             I am a front-end developer with over two years of professional
             experience in creating robust, user-friendly web applications. My

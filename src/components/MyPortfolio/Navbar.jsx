@@ -36,21 +36,7 @@ const Navbar = () => {
             Projects
           </Link>
         </li>
-        <li>
-          <Link to="skills" smooth={true} duration={500}>
-            Skills
-          </Link>
-        </li>
-        <li>
-          <Link to="education" smooth={true} duration={500}>
-            Education
-          </Link>
-        </li>
-        {/* <li>
-          <ThemeToggle />
-        </li> */}
       </ul>
-      {/* Theme toggle button, positioned to the right */}
       <div className="theme-toggle">
         <ThemeToggle />
       </div>

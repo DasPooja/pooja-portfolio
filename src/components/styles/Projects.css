@@ -1,0 +1,45 @@
+.projects-section {
+  padding: 60px 20px;
+  background-color: var(--primary-color); /* #121212 */
+  color: var(--text-color);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: #ff6347; /* Accent color */
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 0 auto 40px auto;
+    display: block;
+  }
+  .section-title::after {
+    width: 30px; /* Optional: Adjust the decorative line size */
+    height: 2px; /* Optional: Adjust the decorative line thickness */
+    bottom: -8px; /* Optional: Adjust the position of the decorative line */
+  }
+}

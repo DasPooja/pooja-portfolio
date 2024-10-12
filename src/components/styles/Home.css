@@ -14,6 +14,18 @@
   min-width: 300px;
 }
 
+@keyframes blink-effect {
+  0% {
+    color: transparent;
+  }
+  50% {
+    color: var(--secondary-color); /* Your secondary color */
+  }
+  100% {
+    color: transparent;
+  }
+}
+
 .home-intro h1 {
   font-family: "Arial", sans-serif; /* You can replace this with your desired font */
   font-weight: bold;
@@ -23,11 +35,12 @@
   -webkit-text-stroke: 1px var(--text-color); /* White border with the stroke */
   position: relative;
   margin-top: 53px;
+  animation: blink-effect 1.5s infinite;
 }
 
-.home-intro h1:hover {
+/* .home-intro h1:hover {
   color: var(--secondary-color);
-}
+} */
 
 .home-intro h3 {
   margin-bottom: 20px;
