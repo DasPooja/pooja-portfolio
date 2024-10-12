@@ -1,0 +1,191 @@
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  min-height: 80vh;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  flex-wrap: wrap;
+}
+
+.home-intro {
+  flex: 1;
+  min-width: 300px;
+}
+
+.home-intro h1 {
+  font-family: "Arial", sans-serif; /* You can replace this with your desired font */
+  font-weight: bold;
+  font-size: 48px;
+  margin-bottom: 0px;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-color); /* White border with the stroke */
+  position: relative;
+  margin-top: 53px;
+}
+
+.home-intro h1:hover {
+  color: var(--secondary-color);
+}
+
+.home-intro h3 {
+  margin-bottom: 20px;
+}
+
+.home-intro p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.resume-btn,
+.hireme-btn {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 15px;
+  max-width: 30%;
+  background-color: transparent; /* Adjust color */
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.resume-btn:hover,
+.hireme-btn:hover {
+  background-color: var(--secondary-color); /* Add hover effect */
+  color: var(--primary-color); /* Change text color on hover */
+}
+
+.home-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-socials {
+  margin-top: 40px; /* Add margin for spacing */
+}
+
+.home-socials a {
+  display: inline-block;
+  align-items: center;
+  margin-right: 70px;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 30px; /* Increase icon size */
+}
+
+.home-socials a:hover {
+  color: var(--secondary-color); /* Add hover effect */
+}
+
+/* Right Side: Floating Image */
+.home-picture {
+  flex: 1;
+  text-align: right;
+  margin-top: 70px;
+}
+
+.floating-img {
+  border-radius: 15em;
+  max-width: 60%;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column; /* Stack elements vertically on mobile */
+    align-items: center; /* Center the items */
+    height: auto;
+    padding: 20px;
+    overflow: visible;
+  }
+
+  .home-intro {
+    margin-right: 0;
+    text-align: center; /* Center align text on mobile */
+    margin-bottom: 20px; /* Space between sections */
+    width: 100%;
+    overflow: visible;
+  }
+
+  .home-intro h1 {
+    font-size: 48px; /* Adjust font size for mobile */
+    font-family: "Arial", sans-serif; /* You can replace this with your desired font */
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-color); /* White border with the stroke */
+    position: relative;
+    /* display: block; */
+    /* line-height: 1.2;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow: visible; */
+  }
+
+  .home-intro h1:hover {
+    color: var(--secondary-color); /* Changes text color on hover */
+    -webkit-text-stroke: 1px var(--secondary-color); /* Changes stroke on hover */
+  }
+
+  .home-intro h2 {
+    font-size: 18px; /* Adjust subheading size for mobile */
+    font-weight: 400;
+    margin-top: 10px; /* Adjust margin for the subtitle */
+    color: var(--text-color); /* Ensure correct color */
+    display: block; /* Ensure it's displayed */
+  }
+
+  .home-intro p {
+    font-size: 16px; /* Adjust font size for mobile */
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+
+  .resume-btn,
+  .hireme-btn {
+    padding: 10px 12px;
+  }
+
+  .home-links {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .home-picture {
+    text-align: center; /* Center the picture on mobile */
+    margin-bottom: 20px;
+  }
+
+  .floating-img {
+    max-width: 70%; /* Make image responsive */
+  }
+
+  .home-socials {
+    justify-content: center; /* Center social links */
+    margin-top: 10px;
+  }
+
+  .home-socials a {
+    margin: 0 10px; /* Adjust margins for social links */
+  }
+}

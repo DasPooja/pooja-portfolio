@@ -1,0 +1,15 @@
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #ff6600;
+  --text-color: #000000;
+  --navbar-bg-color: #ffffff;
+  --navbar-text-color: #000000;
+}
+
+.dark {
+  --primary-color: #000000;
+  --secondary-color: #ff6600;
+  --text-color: #ffffff;
+  --navbar-bg-color: #000000;
+  --navbar-text-color: #ffffff;
+}

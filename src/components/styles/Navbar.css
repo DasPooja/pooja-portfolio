@@ -1,0 +1,178 @@
+.navbar {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: var(--navbar-bg-color);
+  color: var(--navbar-text-color);
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1; /* Keep this lower than the circle */
+}
+
+.hamburger {
+  display: none;
+}
+
+.navbar-left {
+  font-size: 1.5em;
+}
+
+.coder-text {
+  font-family: monospace;
+}
+
+.blinking-underscore {
+  animation: blink 1s steps(2, start) infinite;
+  display: inline-block;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Other navbar styles */
+.navbar-right {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 1.5em;
+}
+
+.navbar-right li {
+  list-style: none;
+  color: var(--navbar-text-color);
+  font-size: 1.2em;
+  cursor: pointer;
+  margin: 0 15px;
+}
+
+.navbar-right li a {
+  display: block;
+  padding: 10px 20px;
+  color: var(--navbar-text-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar-right li a:hover {
+  color: var(--secondary-color);
+}
+
+.navbar-right li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--secondary-color);
+  transition: width 0.3s ease;
+}
+
+.navbar-right li a:hover::after {
+  width: 100%;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  /* Modify navbar for mobile layout */
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    width: 100%;
+  }
+
+  /* Hamburger button for mobile */
+  .hamburger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--navbar-text-color);
+    cursor: pointer;
+  }
+
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Hide navbar-right links by default */
+  .navbar-right {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: var(--navbar-bg-color);
+    padding: 1em 0;
+  }
+
+  /* Show the navbar-right when menu is open */
+  .navbar-right.show {
+    display: flex;
+  }
+
+  .navbar-right li {
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .navbar-right li a {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+  .navbar-right li:last-child {
+    margin-top: 1em;
+  }
+
+  /* Hide blinking underscore on mobile */
+  .blinking-underscore {
+    display: none;
+  }
+
+  /* Keep theme toggle button visible on the right */
+  .theme-toggle {
+    position: absolute;
+    right: 1em; /* Adjust the spacing if needed */
+    top: 1em;
+  }
+}
+
+/* Handle navbar shade for medium screens (768px to 1032px) */
+@media (min-width: 769px) and (max-width: 1032px) {
+  .navbar {
+    padding: 1em;
+    width: 100%; /* Ensure the navbar spans the entire width */
+    background-color: var(
+      --navbar-bg-color
+    ); /* Ensure background color stays */
+  }
+
+  .navbar-right {
+    gap: 1em; /* Reduce gap between menu items to fit more space */
+  }
+
+  .navbar-right li {
+    margin: 0 10px; /* Reduce the space between links to fit the navbar */
+  }
+
+  .navbar-left {
+    font-size: 1.4em; /* Slightly reduce the font size for better fit */
+  }
+}
