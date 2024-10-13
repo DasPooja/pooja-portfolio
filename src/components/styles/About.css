@@ -14,6 +14,10 @@
   margin-bottom: 20px;
 }
 
+p {
+  text-align: justify;
+}
+
 .vertical-line {
   width: 4px;
   background-color: var(--text-color);

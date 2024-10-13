@@ -66,6 +66,11 @@ const About = () => {
                 svgPath="/assets/vite-svgrepo-com.svg"
                 altText="vite"
               />
+            </div>
+          </div>
+          <div className="skills-section">
+            <h3>UI Libraries</h3>
+            <div className="skills-icons">
               <SkillIcons
                 svgPath="/assets/ant-design-svgrepo-com.svg"
                 altText="antd"
