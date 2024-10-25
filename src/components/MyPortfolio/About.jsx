@@ -55,6 +55,10 @@ const About = () => {
                 altText="bootstrap"
               />
               <SkillIcons
+                svgPath="/assets/tailwindcss-icon-svgrepo-com.svg"
+                altText="tailwindcss"
+              />
+              <SkillIcons
                 svgPath="/assets/react-svgrepo-com.svg"
                 altText="react"
               />
@@ -65,6 +69,12 @@ const About = () => {
               <SkillIcons
                 svgPath="/assets/vite-svgrepo-com.svg"
                 altText="vite"
+              />
+              <SkillIcons
+                bgcolor={"white"}
+                borderradius={"50%"}
+                svgPath="/assets/nextjs-svgrepo-com.svg"
+                altText="nextjs"
               />
             </div>
           </div>
@@ -79,6 +89,7 @@ const About = () => {
                 svgPath="/assets/material-ui-svgrepo-com.svg"
                 altText="materilaui"
               />
+              {/* <h6>Shadcn/ui</h6> */}
             </div>
           </div>
           <div className="tools-section">
